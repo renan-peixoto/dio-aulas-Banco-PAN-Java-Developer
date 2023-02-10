@@ -11,7 +11,8 @@ public class Fila {
     return refNoEntradaFila == null ? true : false;
   }
 
-  public void enqueue(No novoNo) {
+  public void enqueue(Object obj) {
+    No novoNo = new No(obj);
     novoNo.setRefNo(refNoEntradaFila); // a referência ao próximo nó do novo nó é definida como a referência ao nó de
                                        // entrada da fila atual. Isso significa que o novo nó aponta para o nó
                                        // anteriormente primeiro na fila.
@@ -19,7 +20,7 @@ public class Fila {
                                // significa que o novo nó é agora o primeiro elemento na fila.
   }
 
-  public No first() {
+  public Object first() {
     if (!this.isEmpty()) { // verifica-se se a fila está vazia. Se a fila estiver vazia, o método retornará
                            // null
       No primeiroNo = refNoEntradaFila; // a referência ao nó de entrada da fila é atribuída a uma variável local
@@ -33,14 +34,14 @@ public class Fila {
           break;
         }
       }
-      return primeiroNo; // Retorna o valor de primeiroNo, que representa o primeiro elemento na fila.
+      return primeiroNo.getObject(); // Retorna o valor de primeiroNo, que representa o primeiro elemento na fila.
 
     }
     return null;
 
   }
 
-  public No dequeue() {
+  public Object dequeue() {
     if (!this.isEmpty()) { // verificação para saber se a fila está vazia. Se a fila estiver vazia, o
                            // método retorna null
       No primeiroNo = refNoEntradaFila; // Cria uma variável local primeiroNo e a inicializa com a referência ao nó de
@@ -56,8 +57,8 @@ public class Fila {
           break;
         }
       }
-      return primeiroNo; // O método retorna o nó referenciado por primeiroNo, que é o primeiro nó da
-                         // fila.
+      return primeiroNo.getObject(); // O método retorna o nó referenciado por primeiroNo, que é o primeiro nó da
+      // fila.
     }
     return null; // Se a fila estiver vazia, o método retorna null.
 

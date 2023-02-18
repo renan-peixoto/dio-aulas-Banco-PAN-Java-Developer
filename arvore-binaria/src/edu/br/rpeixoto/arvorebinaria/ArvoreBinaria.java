@@ -25,20 +25,32 @@ public class ArvoreBinaria<T extends Comparable<T>> {
   }
 
   public void exibirEmOrdem() {
+<<<<<<< HEAD
     System.out.print("\n Exibindo em ordem: ");
+=======
+    System.out.println("\n Exibindo em ordem: ");
+>>>>>>> 7bc07c0f9d9976bfba7d43f27d33b0a2e32a4f97
     exibirEmOrdem(this.raiz);
   }
 
   private void exibirEmOrdem(BinNo<T> atual) {
     if (atual != null) {
       exibirEmOrdem(atual.getNoEsq());
+<<<<<<< HEAD
       System.out.print(atual.getConteudo() + ", ");
+=======
+      System.out.println(atual.getConteudo() + ", ");
+>>>>>>> 7bc07c0f9d9976bfba7d43f27d33b0a2e32a4f97
       exibirEmOrdem(atual.getNoDir());
     }
   }
 
   public void exibirPosOrdem() {
+<<<<<<< HEAD
     System.out.print("\n Exibindo Pos ordem: ");
+=======
+    System.out.println("\n Exibindo Pos ordem: ");
+>>>>>>> 7bc07c0f9d9976bfba7d43f27d33b0a2e32a4f97
     exibirPosOrdem(this.raiz);
   }
 
@@ -46,18 +58,30 @@ public class ArvoreBinaria<T extends Comparable<T>> {
     if (atual != null) {
       exibirEmOrdem(atual.getNoEsq());
       exibirEmOrdem(atual.getNoDir());
+<<<<<<< HEAD
       System.out.print(atual.getConteudo() + ", ");
+=======
+      System.out.println(atual.getConteudo() + ", ");
+>>>>>>> 7bc07c0f9d9976bfba7d43f27d33b0a2e32a4f97
     }
   }
 
   public void exibirPreOrdem() {
+<<<<<<< HEAD
     System.out.print("\n Exibindo Pré ordem: ");
+=======
+    System.out.println("\n Exibindo Pré ordem: ");
+>>>>>>> 7bc07c0f9d9976bfba7d43f27d33b0a2e32a4f97
     exibirPreOrdem(this.raiz);
   }
 
   private void exibirPreOrdem(BinNo<T> atual) {
     if (atual != null) {
+<<<<<<< HEAD
       System.out.print(atual.getConteudo() + ", ");
+=======
+      System.out.println(atual.getConteudo() + ", ");
+>>>>>>> 7bc07c0f9d9976bfba7d43f27d33b0a2e32a4f97
       exibirEmOrdem(atual.getNoEsq());
       exibirEmOrdem(atual.getNoDir());
     }
@@ -84,6 +108,7 @@ public class ArvoreBinaria<T extends Comparable<T>> {
 
       }
 
+<<<<<<< HEAD
       if (pai == null) {
         if (atual.getNoDir()==null) {
           this.raiz=atual.getNoEsq();
@@ -134,6 +159,8 @@ public class ArvoreBinaria<T extends Comparable<T>> {
         }
     }
 
+=======
+>>>>>>> 7bc07c0f9d9976bfba7d43f27d33b0a2e32a4f97
     } catch (NullPointerException erro) {
       System.out.println("Conteúdo não encontrado! Bloco catch");
     }

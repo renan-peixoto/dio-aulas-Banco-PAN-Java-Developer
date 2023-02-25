@@ -1,0 +1,10 @@
+{
+  "java.format.settings.url": "eclipse-formatter.xml",
+  "java.completion.filteredTypes": [
+    "com.sun.*",
+    "sun.*",
+    "jdk.*",
+    "org.graalvm.*",
+    "io.micrometer.shaded.*"
+  ]
+}

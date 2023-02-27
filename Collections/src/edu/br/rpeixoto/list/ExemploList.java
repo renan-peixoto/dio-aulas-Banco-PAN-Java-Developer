@@ -109,10 +109,15 @@ public class ExemploList {
 
         List<Double> notas2 = new LinkedList<>(notas);
         notas2.add(0, 5d);
+        notas2.stream()
+                .skip(notas.size())
+                .distinct()
+                .map(e -> e * 2)
+                .forEach(e -> System.out.println(e));
 
-        System.out.println(notas2.get(0));
-        System.out.println(notas2.remove(0));
-        System.out.println(notas);
+        // System.out.println(notas2.get(0));
+        // System.out.println(notas2.remove(0));
+        System.out.println(notas2);
 
     }
 }

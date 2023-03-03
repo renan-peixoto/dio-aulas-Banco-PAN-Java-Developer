@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CheckedException",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.exception.checked.CheckedException",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
       "name": "Current File",
       "request": "launch",
       "mainClass": "${file}"

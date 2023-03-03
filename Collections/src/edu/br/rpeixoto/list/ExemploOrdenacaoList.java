@@ -2,14 +2,10 @@ package edu.br.rpeixoto.list;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
-import edu.br.rpeixoto.list.outrasClasses.ComparatorCor;
-import edu.br.rpeixoto.list.outrasClasses.ComparatorIdade;
-import edu.br.rpeixoto.list.outrasClasses.ComparatorNomeCorIdade;
 import edu.br.rpeixoto.list.outrasClasses.Gato;
-
-
 
 /*Dadas as seguintes informações sobre meus gatos, crie uma lista
 e ordene esta lista exibindo:
@@ -29,27 +25,41 @@ public class ExemploOrdenacaoList {
       }
     };
 
-    System.out.println("--\tOrdem de inserção\t---");
-    System.out.println(meusGatos);
+    System.out.println("\n--\tOrdem de inserção\t---");
+    meusGatos.stream().forEach(System.out::print);
+    // System.out.println(meusGatos);
 
-    System.out.println("--\tOrdem Aleatória\t---");
+    System.out.println("\n--\tOrdem Aleatória\t---\n");
+
     Collections.shuffle(meusGatos);
     System.out.println(meusGatos);
 
-    System.out.println("--\tOrdem de Natural (Nome)\t---");
-    Collections.sort(meusGatos);
-    System.out.println(meusGatos);
+    System.out.println("\n--\tOrdem de Natural (Nome)\t---");
+    meusGatos.stream().sorted().forEach(System.out::print);
+    // Collections.sort(meusGatos);
+    // System.out.println(meusGatos);
 
-    System.out.println("--\tOrdem de Idade\t---");
+    System.out.println("\n--\tOrdem de Idade\t---");
+    meusGatos.stream()
+        .sorted(Comparator.comparing(Gato::getIdade))
+        .forEach(System.out::print);
     // meusGatos.sort(new ComparatorIdade());
-    Collections.sort(meusGatos, new ComparatorIdade());
-    System.out.println(meusGatos);
+    // Collections.sort(meusGatos, new ComparatorIdade());
+    // System.out.println(meusGatos);
 
-    System.out.println("--\tOrdem de Cor\t---");
-    meusGatos.sort(new ComparatorCor());
-    System.out.println(meusGatos);
-    
-    System.out.println("--\tOrdem de Nome/Cor/Idade\t---");
-    meusGatos.sort(new ComparatorNomeCorIdade());
+    System.out.println("\n--\tOrdem de Cor\t---");
+    meusGatos.stream()
+        .sorted(Comparator.comparing(Gato::getCor))
+        .forEach(System.out::print);
+    // meusGatos.sort(new ComparatorCor());
+    // System.out.println(meusGatos);
+
+    System.out.println("\n--\tOrdem de Nome/Cor/Idade\t---");
+    meusGatos.stream()
+        .sorted(Comparator.comparing(Gato::getNome)
+            .thenComparing(Gato::getCor)
+            .thenComparingInt(Gato::getIdade))
+        .forEach(System.out::print);
+    // meusGatos.sort(new ComparatorNomeCorIdade());
   }
 }

@@ -113,7 +113,7 @@ public class ExemploList {
                 .skip(notas.size())
                 .distinct()
                 .map(e -> e * 2)
-                .forEach(e -> System.out.println(e));
+                .forEach(System.out::println);
 
         // System.out.println(notas2.get(0));
         // System.out.println(notas2.remove(0));

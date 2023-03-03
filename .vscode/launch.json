@@ -1,0 +1,105 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Crime",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.Exercicios.Crime",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "TemperaturaMedia",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.Exercicios.TemperaturaMedia",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "ExercicioSet1",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.Exercicios.set.ExercicioSet1",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "ExercicioSet2",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.Exercicios.set.ExercicioSet2",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "CalculadoraDeMedias",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.debbug.CalculadoraDeMedias",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "ExemploList",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.list.ExemploList",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "ExemploOrdenacaoList",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.list.ExemploOrdenacaoList",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "ExemploMap",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.map.ExemploMap",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "ExercicioProposto",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.map.Exercicios.map.ExercicioProposto",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "ExemploOrdenacaoMap",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.map.ordenacaomap.ExemploOrdenacaoMap",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "ExemploSet",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.set.ExemploSet",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "ExemploOrdenacaoSet",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.set.ordenacao.ExemploOrdenacaoSet",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    },
+    {
+      "type": "java",
+      "name": "ExercicioPropostoRefatoradoMap",
+      "request": "launch",
+      "mainClass": "edu.br.rpeixoto.stream.ExercicioPropostoRefatoradoMap",
+      "projectName": "dio-aulas-Banco-PAN-Java-Developer_85237dc1"
+    }
+  ]
+}
